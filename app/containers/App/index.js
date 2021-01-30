@@ -15,6 +15,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
+import MenuBar from 'components/MenuBar';
 import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
 
@@ -41,6 +42,7 @@ export default function App() {
         />
       </Helmet>
       <Header />
+      <MenuBar />
       <NavBar />
       <Switch>
         <Route exact path="/" component={HomePage} />
