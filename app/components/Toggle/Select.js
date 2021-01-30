@@ -5,7 +5,7 @@ const Select = styled.select`
   background-color: transparent;
   border-style: none;
   color: #fff;
-  width: 100px;
+  width: 70px;
   font-size: 14px;
 `;
 
