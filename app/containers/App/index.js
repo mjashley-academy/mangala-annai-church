@@ -15,16 +15,16 @@ import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
+import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
   flex-direction: column;
 `;
 
@@ -32,12 +32,16 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="%s - Mangala Annai Church"
+        defaultTitle="Mangala Annai Church, Kattuvilai, Nagercoil"
       >
-        <meta name="description" content="A React.js Boilerplate application" />
+        <meta
+          name="description"
+          content="Managal Annai Church, Nagercoil, Kanniyakumari District"
+        />
       </Helmet>
       <Header />
+      <NavBar />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
