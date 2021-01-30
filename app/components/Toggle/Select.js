@@ -4,6 +4,9 @@ const Select = styled.select`
   line-height: 1em;
   background-color: transparent;
   border-style: none;
+  color: #fff;
+  width: 100px;
+  font-size: 14px;
 `;
 
 export default Select;
