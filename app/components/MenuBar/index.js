@@ -37,6 +37,7 @@ export default function MenuBar() {
         <Button className={classes.button}>Home</Button>
         <Button className={classes.button}>About Us</Button>
         <Button className={classes.button}>Mass Timings</Button>
+        <Button className={classes.button}>Testimony</Button>
         <Button>Notice Board</Button>
         <Button
           aria-controls="simple-menu"

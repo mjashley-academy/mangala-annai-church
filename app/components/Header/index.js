@@ -24,10 +24,10 @@ const TitleWrapper = styled.div`
   background: rgba(1, 71, 129, 0.8) url(${bgImage});
 `;
 const LeftImgWrapper = styled.span`
-  width: 152px;
+  width: 125px;
   position: absolute;
-  top: 25px;
-  left: 20px;
+  top: 10px;
+  left: 50px;
 `;
 const RightWrapper = styled.span`
   width: 175px;
