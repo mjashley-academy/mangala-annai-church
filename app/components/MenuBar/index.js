@@ -16,28 +16,27 @@ const useStyles = makeStyles({
     'text-transform': 'capitalize',
     'font-weight': 'bold',
     'min-width': '150px',
-    'padding-right':'0',
-    'margin-right':'21px',
+    'padding-right': '0',
+    'margin-right': '21px',
     '&:hover': {
       'background-color': '#186587',
       color: '#FFF',
       outline: 'none',
       border: 'none',
-      'border-radius':0,
+      'border-radius': 0,
     },
-    '&:after':{
-        'content':'"|"',
-        'float':'right',
-        'color':'#000',
+    '&:after': {
+      content: '"|"',
+      float: 'right',
+      color: '#000',
     },
-    '&:last-child::after':{
-      'display':'none'
+    '&:last-child::after': {
+      display: 'none',
     },
-    '& .MuiButton-label':{
-        'position':'relative',
-        'left':'-21px',
-      
-    }
+    '& .MuiButton-label': {
+      position: 'relative',
+      left: '-21px',
+    },
   },
 });
 
@@ -62,8 +61,8 @@ export default function MenuBar() {
       >
         <Button className={classes.button}>Home</Button>
         <Button className={classes.button}>About Us</Button>
-        <Button className={classes.button}>Mass Timings</Button> 
-        <Button className={classes.button}>Testimony</Button> 
+        <Button className={classes.button}>Mass Timings</Button>
+        <Button className={classes.button}>Testimony</Button>
         <Button className={classes.button}>Notice Board</Button>
         <Button
           className={classes.button}

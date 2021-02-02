@@ -54,7 +54,7 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         />
       </Helmet>
       <div>
-        <HeroBanner/>
+        <HeroBanner />
         <CenteredSection>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />

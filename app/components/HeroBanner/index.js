@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import autoBind from 'auto-bind';
-import {ContentItems } from './herobanner-content';
+import { ContentItems } from './herobanner-content';
 import './herobanner.css';
 
 import {
@@ -10,7 +10,7 @@ import {
   CardMedia,
   Typography,
   Grid,
-  Button
+  Button,
 } from '@material-ui/core';
 
 import { CarouselWrapper } from './carousel-styledcomponents';
@@ -24,7 +24,7 @@ function Banner1(props) {
   const totalItems = props.length ? props.length : 3;
   const mediaLength = totalItems - 1;
 
-  let items = [];
+  const items = [];
   const content = (
     <Grid item xs={12 / totalItems} key="content">
       <CardContent className="Content">
@@ -85,6 +85,7 @@ class HeroBanner extends React.Component {
 
     autoBind(this);
   }
+
   render() {
     return (
       <div>
@@ -113,15 +114,13 @@ class HeroBanner extends React.Component {
               )
             }
           >
-            { ContentItems.map((item, index) => {
-              return (
-                <Banner
-                  item={item}
-                  key={index}
-                  contentPosition={item.contentPosition}
-                />
-              );
-            })}
+            {ContentItems.map((item, index) => (
+              <Banner
+                item={item}
+                key={index}
+                contentPosition={item.contentPosition}
+              />
+            ))}
           </Carousel>
         </CarouselWrapper>
       </div>

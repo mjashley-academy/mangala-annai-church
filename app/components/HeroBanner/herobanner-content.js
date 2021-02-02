@@ -6,11 +6,13 @@ export const ContentItems = [
            Items: [
              {
                Name: 'Macbook Pro',
-               Image: 'https://source.unsplash.com/featured/?macbook',
+               Image:
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/cross.jpg?raw=true',
              },
              {
                Name: 'iPhone',
-               Image: 'https://source.unsplash.com/featured/?iphone',
+               Image:
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/new-church.jpg?raw=true',
              },
            ],
          },
@@ -22,12 +24,12 @@ export const ContentItems = [
              {
                Name: 'Washing Machine WX9102',
                Image:
-                 'https://source.unsplash.com/featured/?washingmachine',
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/old-chirch.jpg?raw=true',
              },
              {
                Name: 'Learus Vacuum Cleaner',
                Image:
-                 'https://source.unsplash.com/featured/?vacuum,cleaner',
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/old-church-day.jpg?raw=true',
              },
            ],
          },
@@ -38,11 +40,13 @@ export const ContentItems = [
            Items: [
              {
                Name: 'Living Room Lamp',
-               Image: 'https://source.unsplash.com/featured/?lamp',
+               Image:
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/old-inside.jpg?raw=true',
              },
              {
                Name: 'Floral Vase',
-               Image: 'https://source.unsplash.com/featured/?vase',
+               Image:
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/pope.png?raw=true',
              },
            ],
          },
@@ -53,7 +57,8 @@ export const ContentItems = [
            Items: [
              {
                Name: 'Macbook Pro',
-               Image: 'https://source.unsplash.com/featured/?macbook',
+               Image:
+                 'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/temp.jpg?raw=true',
              },
              {
                Name: 'iPhone',

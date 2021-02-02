@@ -17,7 +17,7 @@ function Banner(props) {
   const totalItems = props.length ? props.length : 3;
   const mediaLength = totalItems - 1;
 
-  let items = [];
+  const items = [];
   const content = (
     <Grid item xs={12 / totalItems} key="content">
       <CardContent className="Content">
