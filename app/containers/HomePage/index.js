@@ -31,6 +31,7 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import HeroBanner from '../../components/HeroBanner';
 
 const key = 'home';
 
@@ -53,6 +54,7 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         />
       </Helmet>
       <div>
+        <HeroBanner/>
         <CenteredSection>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />

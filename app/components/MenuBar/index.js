@@ -9,9 +9,35 @@ import MenuWrapper from './MenuWrapper';
 
 const useStyles = makeStyles({
   button: {
-    '&.active': {
-      background: 'black',
+    'font-family': "'Helvetica Neue', Helvetica, Arial, sans-serif",
+    'font-size': '16px',
+    border: 'none',
+    color: '#000',
+    'text-transform': 'capitalize',
+    'font-weight': 'bold',
+    'min-width': '150px',
+    'padding-right':'0',
+    'margin-right':'21px',
+    '&:hover': {
+      'background-color': '#186587',
+      color: '#FFF',
+      outline: 'none',
+      border: 'none',
+      'border-radius':0,
     },
+    '&:after':{
+        'content':'"|"',
+        'float':'right',
+        'color':'#000',
+    },
+    '&:last-child::after':{
+      'display':'none'
+    },
+    '& .MuiButton-label':{
+        'position':'relative',
+        'left':'-21px',
+      
+    }
   },
 });
 
@@ -36,17 +62,18 @@ export default function MenuBar() {
       >
         <Button className={classes.button}>Home</Button>
         <Button className={classes.button}>About Us</Button>
-        <Button className={classes.button}>Mass Timings</Button>
-        <Button className={classes.button}>Testimony</Button>
-        <Button>Notice Board</Button>
+        <Button className={classes.button}>Mass Timings</Button> 
+        <Button className={classes.button}>Testimony</Button> 
+        <Button className={classes.button}>Notice Board</Button>
         <Button
+          className={classes.button}
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={handleClick}
         >
           Gallery
         </Button>
-        <Button>Contact</Button>
+        <Button className={classes.button}>Contact</Button>
       </ButtonGroup>
       <Menu
         id="simple-menu"
