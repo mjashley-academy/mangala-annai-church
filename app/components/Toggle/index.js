@@ -21,7 +21,7 @@ function Toggle(props) {
   }
 
   return (
-    <Select value={props.value} onChange={props.onToggle}>
+    <Select id="languageSelector" value={props.value} onChange={props.onToggle}>
       {content}
     </Select>
   );

@@ -18,6 +18,7 @@
     position: relative;
     transition: .3s;
     cursor: pointer;
+   /* background-size: contain;*/
 }
 .Banner .Media .MediaCaption{
     text-overflow: ellipsis;

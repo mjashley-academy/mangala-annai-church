@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import LocaleToggle from 'containers/LocaleToggle';
+
 import A from './A';
 import Img from './Img';
 
-import Banner from './images/church-name-ta.png';
+import bannerTamil from './images/church-name-ta.png';
+import bannerEnglish from './images/church-name-en.png';
 import bgImage from './images/header-background.png';
 import leftImage from './images/mary-left.png';
 import rightImage from './images/stantony-right.png';
@@ -36,14 +38,17 @@ const RightWrapper = styled.span`
   right: 100px;
 `;
 
-function Header(props) {
-  console.log(props);
+function Header() {
+  const curLanguage = document.querySelector('#languageSelector')
+    ? document.querySelector('#languageSelector').value
+    : '';
+  const Banner = curLanguage === 'en' ? bannerEnglish : bannerTamil;
   return (
     <header>
       <HeaderWrapper>
         <TitleWrapper>
           <A href="#">
-            <Img src={Banner} alt="react-boilerplate - Logo" />
+            <Img src={Banner} alt="managa annai church - Logo" />
           </A>
         </TitleWrapper>
         <LocaleToggle />

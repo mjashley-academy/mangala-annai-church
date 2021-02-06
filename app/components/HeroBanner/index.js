@@ -17,7 +17,6 @@ import { CarouselWrapper } from './carousel-styledcomponents';
 import Banner from './banner';
 
 function Banner1(props) {
-  if (props.newProp) console.log(props.newProp);
   const contentPosition = props.contentPosition
     ? props.contentPosition
     : 'left';

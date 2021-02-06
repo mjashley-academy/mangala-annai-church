@@ -3,7 +3,9 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import { FormattedMessage } from 'react-intl';
 import { makeStyles } from '@material-ui/core/styles';
+import messages from './messages';
 
 import MenuWrapper from './MenuWrapper';
 
@@ -59,9 +61,15 @@ export default function MenuBar() {
         color="primary"
         aria-label="large outlined primary button group"
       >
-        <Button className={classes.button}>Home</Button>
-        <Button className={classes.button}>About Us</Button>
-        <Button className={classes.button}>Mass Timings</Button>
+        <Button className={classes.button}>
+          <FormattedMessage {...messages.home} />
+        </Button>
+        <Button className={classes.button}>
+          <FormattedMessage {...messages.aboutUs} />
+        </Button>
+        <Button className={classes.button}>
+          <FormattedMessage {...messages.massTimings} />
+        </Button>
         <Button className={classes.button}>Testimony</Button>
         <Button className={classes.button}>Notice Board</Button>
         <Button
