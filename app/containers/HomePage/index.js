@@ -11,6 +11,7 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
@@ -31,7 +32,10 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import MenuBar from '../../components/MenuBar';
 import HeroBanner from '../../components/HeroBanner';
+import Grid from '../../components/Grid';
+import HamburgerMenu from '../../components/HambugerMenu/index';
 
 const key = 'home';
 
@@ -54,6 +58,13 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         />
       </Helmet>
       <div>
+        <MobileView>
+          <HamburgerMenu />
+        </MobileView>
+        <BrowserView>
+          <MenuBar />
+        </BrowserView>
+        <Grid />
         <HeroBanner />
         <CenteredSection>
           <H2>

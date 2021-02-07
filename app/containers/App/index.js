@@ -32,7 +32,6 @@ const AppWrapper = styled.div`
 
 class App extends React.Component {
   render() {
-    console.log('this.props.somethingFromStore', this.props);
     return (
       <AppWrapper>
         <Helmet
@@ -45,7 +44,7 @@ class App extends React.Component {
           />
         </Helmet>
         <Header />
-        <MenuBar />
+
         <NavBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
