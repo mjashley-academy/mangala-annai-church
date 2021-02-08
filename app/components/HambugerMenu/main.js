@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MenuItem from './menuItem';
-import Menu from "./menu";
-import MenuButton from "./menuButton"
+import Menu from './menu';
+import MenuButton from './menuButton';
 
 class Main extends Component {
   constructor(props) {
@@ -36,19 +36,17 @@ class Main extends Component {
       },
     };
     const menu = ['About Us', 'Our Products', 'Services', 'FAQ', 'Contact Us'];
-    const menuItems = menu.map((val, index) => {
-      return (
-        <MenuItem
-          key={index}
-          delay={`${index * 0.1}s`}
-          onClick={() => {
-            this.handleLinkClick();
-          }}
-        >
-          {val}
-        </MenuItem>
-      );
-    });
+    const menuItems = menu.map((val, index) => (
+      <MenuItem
+        key={index}
+        delay={`${index * 0.1}s`}
+        onClick={() => {
+          this.handleLinkClick();
+        }}
+      >
+        {val}
+      </MenuItem>
+    ));
 
     return (
       <div>

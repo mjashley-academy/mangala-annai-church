@@ -18,6 +18,9 @@ const HeaderWrapper = styled.div`
   max-width: 100%;
   height: 210px;
   position: relative;
+  @media ${device.tablet} {
+    height: 163px;
+  }
   @media ${device.mobileL} {
     height: 100px;
   }
@@ -38,6 +41,9 @@ const LeftImgWrapper = styled.span`
   position: absolute;
   top: 10px;
   left: 50px;
+  @media ${device.tablet} {
+    width: 100px;
+  }
   @media ${device.mobileL} {
     width: 60px;
     left: 15px;
@@ -52,6 +58,9 @@ const RightWrapper = styled.span`
     width: 150px;
     right: 40px;
     top: 42px;
+  }
+  @media ${device.tablet} {
+    width: 108px;
   }
   @media ${device.mobileL} {
     width: 67px;

@@ -64,7 +64,6 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         <BrowserView>
           <MenuBar />
         </BrowserView>
-        <Grid />
         <HeroBanner />
         <CenteredSection>
           <H2>
