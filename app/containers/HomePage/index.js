@@ -34,8 +34,8 @@ import reducer from './reducer';
 import saga from './saga';
 import MenuBar from '../../components/MenuBar';
 import HeroBanner from '../../components/HeroBanner';
-import Grid from '../../components/Grid';
 import HamburgerMenu from '../../components/HambugerMenu/index';
+import SlideBar from '../../components/SlideBar';
 
 const key = 'home';
 
@@ -60,11 +60,12 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
       <div>
         <MobileView>
           <HamburgerMenu />
+          <SlideBar />
         </MobileView>
         <BrowserView>
           <MenuBar />
+          <HeroBanner />
         </BrowserView>
-        <HeroBanner />
         <CenteredSection>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />
