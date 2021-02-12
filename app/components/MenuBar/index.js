@@ -13,6 +13,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
+  containerWrapper:{
+    width:'100%',
+  },
   button: {
     'font-family': "'Helvetica Neue', Helvetica, Arial, sans-serif",
     'font-size': '16px',
@@ -56,10 +59,9 @@ export default function MenuBar() {
     setAnchorEl(null);
   };
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container className={classes.containerWrapper}>
         <Grid item xs={12}>
           <MenuWrapper>
             <ButtonGroup
@@ -76,17 +78,23 @@ export default function MenuBar() {
               <Button className={classes.button}>
                 <FormattedMessage {...messages.massTimings} />
               </Button>
-              <Button className={classes.button}>Testimony</Button>
-              <Button className={classes.button}>Notice Board</Button>
+              <Button className={classes.button}>
+                <FormattedMessage {...messages.testimony} />
+              </Button>
+              <Button className={classes.button}>
+                <FormattedMessage {...messages.noticeBoard} />
+              </Button>
               <Button
                 className={classes.button}
                 aria-controls="simple-menu"
                 aria-haspopup="true"
                 onClick={handleClick}
               >
-                Gallery
+                <FormattedMessage {...messages.gallery} />
               </Button>
-              <Button className={classes.button}>Contact</Button>
+              <Button className={classes.button}>
+                <FormattedMessage {...messages.contact} />
+              </Button>
             </ButtonGroup>
             <Menu
               id="simple-menu"

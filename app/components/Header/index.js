@@ -37,7 +37,7 @@ const TitleWrapper = styled.div`
   background-repeat: no-repeat;
 `;
 const LeftImgWrapper = styled.span`
-  width: 125px;
+  width: 143px;
   position: absolute;
   top: 10px;
   left: 50px;
@@ -45,8 +45,8 @@ const LeftImgWrapper = styled.span`
     width: 100px;
   }
   @media ${device.mobileL} {
-    width: 60px;
-    left: 15px;
+    width: 67px;
+    left: 20px;
   }
 `;
 const RightWrapper = styled.span`

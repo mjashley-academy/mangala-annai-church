@@ -13,7 +13,7 @@
     color: #FFF;
 }
 .slick-prev, .slick-next{
-    z-index: 999;
+    z-index: 1;
     top:40%;
 }
 .slick-prev{

@@ -1,0 +1,17 @@
+.marquee-container {
+  background: gainsboro;
+  width: 100%;
+}
+.marquee-text {
+  margin: 10px auto;
+  width: 90%;
+  color: #2f5677;
+  font-weight: bold;
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .marquee-text {
+    width: 82%;
+  }
+}

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import MenuItem from './menuItem';
 import Menu from './menu';
 import MenuButton from './menuButton';
+import { FormattedMessage } from 'react-intl';
+import messages from "./messages";
+
 
 class Main extends Component {
   constructor(props) {
@@ -35,11 +38,19 @@ class Main extends Component {
         margin: '0 auto',
       },
     };
-    const menu = ['About Us', 'Our Products', 'Services', 'FAQ', 'Contact Us'];
+    const menu = [
+      <FormattedMessage {...messages.home} />,
+      <FormattedMessage {...messages.aboutUs} />,
+      <FormattedMessage {...messages.massTimings} />,
+      <FormattedMessage {...messages.testimony} />,
+      <FormattedMessage {...messages.noticeBoard} />,
+      <FormattedMessage {...messages.gallery} />,
+      <FormattedMessage {...messages.contact} />,
+    ];
     const menuItems = menu.map((val, index) => (
       <MenuItem
         key={index}
-        delay={`${index * 0.1}s`}
+        delay={`${index * 0.2}s`}
         onClick={() => {
           this.handleLinkClick();
         }}
