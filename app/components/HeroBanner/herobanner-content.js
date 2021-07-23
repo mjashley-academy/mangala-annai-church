@@ -1,6 +1,6 @@
 export const ContentItems = [
   {
-    Name: 'Church',
+    Name: 'Our Lady of Annunciation Church',
     Caption: 'Welcome to our church',
     contentPosition: 'left',
     Items: [
