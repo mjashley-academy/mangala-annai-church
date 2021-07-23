@@ -34,7 +34,7 @@ export const ContentItems = [
     ],
   },
   {
-    Name: 'Kattuvilai',
+    Name: 'KATTUVILAI',
     Caption: 'Church Images',
     contentPosition: 'right',
     Items: [
