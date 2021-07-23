@@ -61,7 +61,7 @@ export const ContentItems = [
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/temp.jpg?raw=true',
       },
       {
-        Name: 'Pope.Jorge Mario Bergoglio',
+        Name: 'Pope.Francis',
         Image:
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/pope.png?raw=true',
       },
@@ -73,7 +73,7 @@ export const ContentItems = [
     contentPosition: 'middle',
     Items: [
       {
-        Name: "Our Click's while Image Going",
+        Name: "Our Click's while Work Going",
         Image: 'https://source.unsplash.com/featured/?washingmachine',
       },
       {
