@@ -1,7 +1,7 @@
 export const ContentItems = [
   {
-    Name: 'Electronics',
-    Caption: 'Electrify your friends!',
+    Name: 'Church',
+    Caption: 'Welcome to our church',
     contentPosition: 'left',
     Items: [
       {
@@ -34,8 +34,8 @@ export const ContentItems = [
     ],
   },
   {
-    Name: 'Decoratives',
-    Caption: 'Give style and color to your living room!',
+    Name: 'Kattuvilai',
+    Caption: 'Church Images',
     contentPosition: 'right',
     Items: [
       {
@@ -51,8 +51,8 @@ export const ContentItems = [
     ],
   },
   {
-    Name: 'Electronics',
-    Caption: 'Electrify your friends!',
+    Name: 'Our Lady of Annunciation Church',
+    Caption: 'Kattuvilai',
     contentPosition: 'left',
     Items: [
       {
@@ -62,7 +62,7 @@ export const ContentItems = [
       },
       {
         Name: 'iPhone',
-        Image: 'https://source.unsplash.com/featured/?iphone',
+        Image: 'https://source.usplash.com/featured/?iphone',
       },
     ],
   },
