@@ -2,7 +2,7 @@ export const ContentItems = [
   {
     Name: 'Our Lady of Annunciation Church',
     Caption: 'Welcome to our church',
-    contentPosition: 'left',
+    contentPosition: 'middle',
     Items: [
       {
         Name: 'Cross Image',
