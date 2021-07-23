@@ -36,7 +36,7 @@ import MenuBar from '../../components/MenuBar';
 import HeroBanner from '../../components/HeroBanner';
 import HamburgerMenu from '../../components/HambugerMenu/index';
 import SlideBar from '../../components/SlideBar';
-
+import ChurchHistory from '../../components/ChurchHistory';
 const key = 'home';
 
 export function HomePage({ username, onSubmitForm, onChangeUsername }) {
@@ -54,7 +54,7 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         <title>Home Page</title>
         <meta
           name="description"
-          content="A React.js Boilerplate application homepage"
+          content="Mangala Annai Church application homepage"
         />
       </Helmet>
       <div>
@@ -66,14 +66,11 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
           <MenuBar />
           <HeroBanner />
         </BrowserView>
-        <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
-          </H2>
-          <p>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </p>
-        </CenteredSection>
+        <ChurchHistory
+          heading = {<FormattedMessage {...messages.startProjectHeader} />}
+          content = {<FormattedMessage {...messages.startProjectMessage} />}
+        />
+
         <Section>
           <H2>
             <FormattedMessage {...messages.trymeHeader} />

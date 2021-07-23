@@ -1,23 +1,22 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { makeStyles } from '@material-ui/core/styles';
 
-import A from 'components/A';
 import Wrapper from './Wrapper';
 import messages from './messages';
 
+const useStyles = makeStyles(() => ({
+  section: {
+    margin: '0 auto',
+  },
+}));
+
 function Footer() {
+  const classes = useStyles();
   return (
     <Wrapper>
-      <section>
+      <section className={classes.section}>
         <FormattedMessage {...messages.licenseMessage} />
-      </section>
-      <section>
-        <FormattedMessage
-          {...messages.authorMessage}
-          values={{
-            author: <A href="https://twitter.com/mxstbr">Max Stoiber</A>,
-          }}
-        />
       </section>
     </Wrapper>
   );
