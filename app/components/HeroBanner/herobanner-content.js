@@ -17,7 +17,7 @@ export const ContentItems = [
     ],
   },
   {
-    Name: 'Our Old Church',
+    Name: 'Old Church',
     Caption: 'Our Olden History',
     contentPosition: 'middle',
     Items: [
