@@ -6,6 +6,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { FormattedMessage } from 'react-intl';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import color from 'material-ui/colors/amber';
 import messages from './messages';
 
 import MenuWrapper from './MenuWrapper';
@@ -13,27 +14,30 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  containerWrapper:{
-    width:'100%',
+  containerWrapper: {
+    width: '100vw',
   },
+
   button: {
-    'font-family': "'Helvetica Neue', Helvetica, Arial, sans-serif",
     'font-size': '16px',
-    border: 'none',
-    color: '#000',
+    border: '1px solid gainsboro',
+    color: 'white',
+    'font-family': 'fangsong',
     'text-transform': 'capitalize',
     'font-weight': 'bold',
     'min-width': '150px',
     'padding-right': '0',
-    'margin-right': '21px',
+    'box-sizing': '2px gray',
+    'background-color': 'gainsboro',
+    'text-shadow': '2px 2px 8px #186587',
+    border: '2px solid #2f5677',
     '&:hover': {
       'background-color': '#186587',
       color: '#FFF',
       outline: 'none',
-      border: 'none',
       'border-radius': 0,
     },
-    '&:after': {
+    /* '&:after': {
       content: '"|"',
       float: 'right',
       color: '#000',
@@ -44,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     '& .MuiButton-label': {
       position: 'relative',
       left: '-21px',
-    },
+    }, */
   },
 }));
 

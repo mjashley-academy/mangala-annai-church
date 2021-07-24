@@ -16,13 +16,12 @@ import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
-import MarqueeText from '../../components/MarqueeText';
 import MenuBar from 'components/MenuBar';
 import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
 import { FormattedMessage } from 'react-intl';
-import messages from "./messages";
-
+import MarqueeText from '../../components/MarqueeText';
+import messages from './messages';
 
 import GlobalStyle from '../../global-styles';
 
@@ -35,7 +34,6 @@ const AppWrapper = styled.div`
 `;
 
 class App extends React.Component {
-  
   render() {
     return (
       <AppWrapper>

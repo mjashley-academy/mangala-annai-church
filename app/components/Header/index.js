@@ -15,7 +15,7 @@ import leftImage from './images/mary-left.png';
 import rightImage from './images/stantony-right.png';
 
 const HeaderWrapper = styled.div`
-  max-width: 100%;
+  width: 100%;
   height: 210px;
   position: relative;
   @media ${device.tablet} {
@@ -24,29 +24,41 @@ const HeaderWrapper = styled.div`
   @media ${device.mobileL} {
     height: 100px;
   }
+  @media ${device.desktop} {
+    max-height: 210px;
+  }
+  @media screen and (min-width: 320px) and (orientation: landscape) {
+    min-width: 100%;
+  }
 `;
 
 const TitleWrapper = styled.div`
   max-width: 100%;
-  margin: 0 auto;
   display: flex;
   min-height: 100%;
   flex-direction: column;
   background: rgba(1, 71, 129, 0.8) url(${bgImage});
   background-size: cover;
   background-repeat: no-repeat;
+  @media ${device.desktop} {
+    position: relative;
+    top: 0px;
+  }
 `;
 const LeftImgWrapper = styled.span`
   width: 143px;
   position: absolute;
   top: 10px;
   left: 50px;
+  z-index: 1;
   @media ${device.tablet} {
     width: 100px;
   }
   @media ${device.mobileL} {
     width: 67px;
     left: 20px;
+  }
+  @media ${device.desktop} {
   }
 `;
 const RightWrapper = styled.span`
