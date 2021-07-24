@@ -74,7 +74,8 @@ export const ContentItems = [
     Items: [
       {
         Name: "Our Click's while Work Going",
-        Image: 'https://source.unsplash.com/featured/?washingmachine',
+        Image:
+          'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/kattuvilai-church.jpg?raw=true',
       },
       {
         Name: 'Work Going on..',
