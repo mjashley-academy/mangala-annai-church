@@ -73,7 +73,7 @@ export const ContentItems = [
     contentPosition: 'middle',
     Items: [
       {
-        Name: "Our Click's while Work Going",
+        Name: 'Kattuvilai Church',
         Image:
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/kattuvilai-church.jpg?raw=true',
       },
