@@ -75,7 +75,7 @@ export const ContentItems = [
       {
         Name: 'Kattuvilai Church',
         Image:
-          'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/kattuvilai-church.jpg?raw=true',
+          'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/pope.png?raw=true',
       },
       {
         Name: 'Work Going on..',
