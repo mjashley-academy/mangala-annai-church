@@ -78,8 +78,9 @@ export const ContentItems = [
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/pope.png?raw=true',
       },
       {
-        Name: 'Work Going on..',
-        Image: 'https://source.unsplash.com/featured/?vacuum,cleaner',
+        Name: 'Mandabam',
+        Image:
+          'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/temp.jpg?raw=true',
       },
     ],
   },
