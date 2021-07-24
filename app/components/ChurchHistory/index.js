@@ -4,11 +4,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Img from './../../components/Img';
-import pope from './../../../app/images/pope.png';
-import bishop from './../../../app/images/Bishop-Kottar.png';
-
-
+import Img from '../Img';
+import pope from '../../images/pope.png';
+import bishop from '../../images/Bishop-Kottar.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,9 +22,15 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     position: 'relative',
     top: '-185px',
+    '@media(min-width:360px)': {
+      top: '-33px',
+    },
+    '@media(min-width:230px)': {
+      top: '-21px',
+    },
   },
   bishopImage: {
-    width:'200px',
+    width: '200px',
     'border-radius': '97px',
   },
   h2: {
@@ -56,7 +60,11 @@ export default function ChurchHistory(props) {
           </Grid>
           <Grid item xs={12} sm={2}>
             <ButtonBase>
-              <Img className={classes.bishopImage} alt="Bishop photo" src={bishop} />
+              <Img
+                className={classes.bishopImage}
+                alt="Bishop photo"
+                src={bishop}
+              />
             </ButtonBase>
           </Grid>
         </Grid>
