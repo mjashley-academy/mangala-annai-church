@@ -1,16 +1,16 @@
 export const ContentItems = [
   {
-    Name: 'Church',
+    Name: 'Our Lady of Annunciation Church',
     Caption: 'Welcome to our church',
-    contentPosition: 'left',
+    contentPosition: 'middle',
     Items: [
       {
-        Name: 'Cross Image',
+        Name: 'Holy Cross Image',
         Image:
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/cross.jpg?raw=true',
       },
       {
-        Name: 'New Church',
+        Name: 'New Church Model',
         Image:
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/new-church.jpg?raw=true',
       },
@@ -34,9 +34,9 @@ export const ContentItems = [
     ],
   },
   {
-    Name: 'Kattuvilai',
+    Name: 'KATTUVILAI',
     Caption: 'Church Images',
-    contentPosition: 'right',
+    contentPosition: 'left',
     Items: [
       {
         Name: 'Inside Old Church',
