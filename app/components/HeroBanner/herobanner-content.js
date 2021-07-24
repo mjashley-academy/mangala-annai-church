@@ -5,7 +5,7 @@ export const ContentItems = [
     contentPosition: 'middle',
     Items: [
       {
-        Name: 'Cross Image',
+        Name: 'Holy Cross Image',
         Image:
           'https://github.com/mjashley-academy/mangala-annai-church/blob/04-hp-carousel-section/app/components/HeroBanner/images/cross.jpg?raw=true',
       },
