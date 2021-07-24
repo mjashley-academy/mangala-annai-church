@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
     '@media(min-width:360px)': {
       top: '-33px',
     },
+    '@media(min-width:230px)': {
+      top: '-21px',
+    },
   },
   bishopImage: {
     width: '200px',
@@ -42,7 +45,7 @@ export default function ChurchHistory(props) {
 
   return (
     <div className={classes.root}>
-      <h2 className={classes.h2}>{props.heading?props.heading:''}</h2>
+      <h2 className={classes.h2}>{props.heading}</h2>
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={2}>
