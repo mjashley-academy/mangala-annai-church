@@ -84,7 +84,7 @@ export const ContentItems = [
   },
   {
     Name: 'Welcome to Kattuvillai',
-    Caption: 'Image',
+    Caption: 'Church',
     contentPosition: 'right',
     Items: [
       {
