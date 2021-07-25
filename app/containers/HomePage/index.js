@@ -22,7 +22,6 @@ import {
 } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import AtPrefix from './AtPrefix';
-import CenteredSection from './CenteredSection';
 import Form from './Form';
 import Input from './Input';
 import Section from './Section';
@@ -37,6 +36,7 @@ import HeroBanner from '../../components/HeroBanner';
 import HamburgerMenu from '../../components/HambugerMenu/index';
 import SlideBar from '../../components/SlideBar';
 import ChurchHistory from '../../components/ChurchHistory';
+import VideoPlayer from './videoPlayer';
 const key = 'home';
 
 export function HomePage({ username, onSubmitForm, onChangeUsername }) {
@@ -67,9 +67,10 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
           <HeroBanner />
         </BrowserView>
         <ChurchHistory
-          heading = {<FormattedMessage {...messages.startProjectHeader} />}
-          content = {<FormattedMessage {...messages.startProjectMessage} />}
+          heading={<FormattedMessage {...messages.startProjectHeader} />}
+          content={<FormattedMessage {...messages.startProjectMessage} />}
         />
+        <VideoPlayer />
 
         <Section>
           <H2>
