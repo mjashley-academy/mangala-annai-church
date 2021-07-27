@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import VideoContainer, { VideoRightPanel } from './videoContainer';
+import VideoContainer from './videoContainer';
 
 /**
  *
@@ -15,7 +15,6 @@ export default function videoPlayer() {
         width="950px"
         height="500px"
       />
-      <VideoRightPanel>dfgdfg dfg useDebugV</VideoRightPanel>
     </VideoContainer>
   );
 }
