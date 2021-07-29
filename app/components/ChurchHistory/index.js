@@ -32,6 +32,7 @@ const useStyles = makeStyles(theme => ({
   bishopImage: {
     width: '200px',
     'border-radius': '97px',
+    
   },
   h2: {
     'text-align': 'center',
@@ -54,7 +55,7 @@ export default function ChurchHistory(props) {
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm={8}>
-            <Typography gutterBottom variant="subtitle1">
+            <Typography gutterBottom variant="subtitle1" align="justify">
               {props.content}
             </Typography>
           </Grid>
