@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactPlayer from 'react-player';
 import VideoContainer from './videoContainer';
-
+import './VideoPlayer.css';
 /**
  *
  * Reference URL: https://www.npmjs.com/package/react-player
  */
 export default function videoPlayer() {
   return (
-    <VideoContainer>
+    <Fragment>
+      <VideoContainer />
       <ReactPlayer
         url="https://www.youtube.com/watch?v=SEYJDNJQ4KA"
-        playing="true"
-        width="950px"
-        height="500px"
+        con="true"
+        width="500px"
+        height="350px"
+        className="VideoPlayer"
       />
-    </VideoContainer>
+    </Fragment>
   );
 }
