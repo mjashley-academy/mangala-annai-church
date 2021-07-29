@@ -9,14 +9,14 @@ import './VideoPlayer.css';
 export default function videoPlayer() {
   return (
     <Fragment>
-    <VideoContainer/>
+      <VideoContainer />
       <ReactPlayer
         url="https://www.youtube.com/watch?v=SEYJDNJQ4KA"
         con="true"
         width="500px"
         height="350px"
-       className='VideoPlayer'
+        className="VideoPlayer"
       />
-  </Fragment>
+    </Fragment>
   );
 }

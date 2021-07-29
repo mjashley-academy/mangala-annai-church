@@ -32,7 +32,6 @@ const useStyles = makeStyles(theme => ({
   bishopImage: {
     width: '200px',
     'border-radius': '97px',
-    
   },
   h2: {
     'text-align': 'center',
