@@ -6,6 +6,7 @@ const Wrapper = styled.footer`
   padding: 1em 0;
   border-top: 1px solid #2f5677;
   color: #2f5677;
+  background-color: lightblue;
 `;
 
 export default Wrapper;

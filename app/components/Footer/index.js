@@ -7,7 +7,7 @@ import messages from './messages';
 
 const useStyles = makeStyles(() => ({
   section: {
-    margin: '0 auto',
+    margin: '50px auto',
   },
 }));
 
