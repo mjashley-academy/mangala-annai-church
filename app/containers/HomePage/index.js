@@ -74,10 +74,9 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         <FesturedGallery
           heading={<FormattedMessage {...messages.featuredGallery} />}
         />
-        {/**
-         * <VideoPlayer />
-         */}
-
+        <Section>
+          <VideoPlayer />
+        </Section>
         <Section>
           <H2>
             <FormattedMessage {...messages.trymeHeader} />

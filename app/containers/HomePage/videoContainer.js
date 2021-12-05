@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const VideoContainer = styled.div`
-  display: inline-block;
+  display: block;
+  width: 950px;
+  margin: 0 auto;
+}
 `;
 export const VideoRightPanel = styled.div`
   width: 400px;
