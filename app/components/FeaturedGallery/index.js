@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import autoBind from 'auto-bind';
-import { ContentItems } from './herobanner-content';
-import './herobanner.css';
+import { ContentItems } from './featuredGallery-content';
+import './featured-gallery.css';
 
 import {
   Card,
@@ -14,9 +14,9 @@ import {
 } from '@material-ui/core';
 
 import { CarouselWrapper } from './carousel-styledcomponents';
-import Banner from './banner';
+import GalleryTile from './GalleryTile';
 
-class HeroBanner extends React.Component {
+class FeaturedGallery extends React.Component {
   constructor(props) {
     super(props);
 
@@ -33,11 +33,13 @@ class HeroBanner extends React.Component {
   }
 
   render() {
+      console.log(this.props);
     return (
       <div>
         <CarouselWrapper>
+          <h2 className="gallery-heading">Featured Gallery</h2>
           <Carousel
-            className="Example"
+            className="featured-gallery"
             autoPlay={this.state.autoPlay}
             animation={this.state.animation}
             indicators={this.state.indicators}
@@ -60,13 +62,10 @@ class HeroBanner extends React.Component {
               )
             }
           >
-            {ContentItems.map((item, index) => (
-              <Banner
-                item={item}
-                key={index}
-                contentPosition={item.contentPosition}
-              />
-            ))}
+            {ContentItems.map((item, index) => {
+              let slidenum = 'slide' + index;
+              return <GalleryTile slides={item[slidenum]} />;
+            })}
           </Carousel>
         </CarouselWrapper>
       </div>
@@ -74,4 +73,4 @@ class HeroBanner extends React.Component {
   }
 }
 
-export default HeroBanner;
+export default FeaturedGallery;

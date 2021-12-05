@@ -16,7 +16,6 @@ import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
-import GalleryPage from 'containers/GalleryPage/index';
 
 import Header from 'components/Header';
 import MenuBar from 'components/MenuBar';
@@ -56,7 +55,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/features" component={FeaturePage} />
-          <Route path="/Gallery" component={GalleryPage} />
+         
           <Route path="" component={NotFoundPage} />
         </Switch>
         <Footer />

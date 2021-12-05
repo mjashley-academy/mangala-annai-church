@@ -36,6 +36,7 @@ import HeroBanner from '../../components/HeroBanner';
 import HamburgerMenu from '../../components/HambugerMenu/index';
 import SlideBar from '../../components/SlideBar';
 import ChurchHistory from '../../components/ChurchHistory';
+import FesturedGallery from '../../components/FeaturedGallery/GalleryTile';
 import VideoPlayer from './videoPlayer';
 const key = 'home';
 
@@ -70,7 +71,12 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
           heading={<FormattedMessage {...messages.startProjectHeader} />}
           content={<FormattedMessage {...messages.startProjectMessage} />}
         />
-        <VideoPlayer />
+        <FesturedGallery
+          heading={<FormattedMessage {...messages.featuredGallery} />}
+        />
+        {/**
+         * <VideoPlayer />
+         */}
 
         <Section>
           <H2>

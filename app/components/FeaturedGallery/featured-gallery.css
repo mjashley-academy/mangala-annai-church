@@ -1,0 +1,8 @@
+.featured-gallery .CarouselItem{
+    display: inline-block;
+}
+.gallery-heading{
+    color: #2f5677;
+    font-size: 36px;
+    text-align: center;
+}
