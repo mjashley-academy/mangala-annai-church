@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
+import Icon from '@material-ui/core/Icon';
 import autoBind from 'auto-bind';
 import { ContentItems } from './testimonials-content';
 import './testimonial.css';
