@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const VideoContainer = styled.div`
   display: block;
   width: 950px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 `;
 export const VideoRightPanel = styled.div`

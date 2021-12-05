@@ -11,7 +11,6 @@ export default function videoPlayer() {
     <VideoContainer>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=SEYJDNJQ4KA"
-        playing="true"
         width="950px"
         height="500px"
       />

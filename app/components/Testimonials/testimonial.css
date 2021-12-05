@@ -1,0 +1,10 @@
+.testimonial-heading{
+    color: #2f5677;
+    font-size: 36px;
+    text-align: center;
+}
+.testimonials-container .MuiCardContent-root,
+.testimonials-container .MuiCardActions-root{
+    width:90%;
+    margin:20px auto;
+}

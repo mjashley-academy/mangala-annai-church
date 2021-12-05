@@ -37,6 +37,7 @@ import HamburgerMenu from '../../components/HambugerMenu/index';
 import SlideBar from '../../components/SlideBar';
 import ChurchHistory from '../../components/ChurchHistory';
 import FesturedGallery from '../../components/FeaturedGallery';
+import Testimonials from '../../components/Testimonials';
 import VideoPlayer from './videoPlayer';
 const key = 'home';
 
@@ -74,10 +75,11 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
         <FesturedGallery
           heading={<FormattedMessage {...messages.featuredGallery} />}
         />
-        <Section>
-          <VideoPlayer />
-        </Section>
-        <Section>
+        <VideoPlayer />
+        <Testimonials />
+        {/**
+   * 
+   *         <Section>
           <H2>
             <FormattedMessage {...messages.trymeHeader} />
           </H2>
@@ -97,6 +99,7 @@ export function HomePage({ username, onSubmitForm, onChangeUsername }) {
             </label>
           </Form>
         </Section>
+   */}
       </div>
     </article>
   );
