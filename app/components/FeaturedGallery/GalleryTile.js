@@ -11,8 +11,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    float:'left',
-    margin:'20px 20px 0 0',
+    float: 'left',
+    margin: '20px 20px 0 0',
   },
   media: {
     height: 300,
@@ -20,38 +20,44 @@ const useStyles = makeStyles({
 });
 export default function GalleryTile(props) {
   const classes = useStyles();
-  let items = []
-for (let i = 0; i < props.slides.length; i++) {
-  const tile = (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.slides[i].Image}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.slides[i].Title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.slides[i].Desc}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-  );
+  const items = [];
+  if (props.slides){
+    for (let i = 0; i < props.slides.length; i++) {
+      const tile = (
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image={props.slides[i].Image}
+              title="Contemplative Reptile"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {props.slides[i].Title}
+              </Typography>
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                {props.slides[i].Desc}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      );
 
-  items.push(tile);
-}
+      items.push(tile);
+    }
+  }
 
   return <>{items}</>;
 }

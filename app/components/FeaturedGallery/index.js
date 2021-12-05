@@ -33,7 +33,7 @@ class FeaturedGallery extends React.Component {
   }
 
   render() {
-      console.log(this.props);
+    console.log(this.props);
     return (
       <div>
         <CarouselWrapper>
@@ -63,7 +63,7 @@ class FeaturedGallery extends React.Component {
             }
           >
             {ContentItems.map((item, index) => {
-              let slidenum = 'slide' + index;
+              const slidenum = `slide${index}`;
               return <GalleryTile slides={item[slidenum]} />;
             })}
           </Carousel>

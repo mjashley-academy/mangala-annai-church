@@ -36,7 +36,7 @@ import HeroBanner from '../../components/HeroBanner';
 import HamburgerMenu from '../../components/HambugerMenu/index';
 import SlideBar from '../../components/SlideBar';
 import ChurchHistory from '../../components/ChurchHistory';
-import FesturedGallery from '../../components/FeaturedGallery/GalleryTile';
+import FesturedGallery from '../../components/FeaturedGallery';
 import VideoPlayer from './videoPlayer';
 const key = 'home';
 
